@@ -3,32 +3,36 @@ import karegar from "../public/images/karegar.png";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-linear-to-tl from-sky-100 to-sky-200 text-sky-700 p-4 sm:p-6 md:p-10 text-center">
+    <div className="min-h-screen  flex flex-col items-center justify-center text-sky-700 p-4 sm:p-6 md:p-10 text-center">
       <div className="mb-6 sm:mb-8 flex flex-col items-center relative">
-        <div className="p-1.5 sm:p-2 rounded-full shadow-xl border border-sky-300 animate-glowOutline">
+        <div className="lg:p-1.5 sm:p-4 rounded-full  shadow-xl border border-sky-300 animate-glowOutline">
           <Image
             src={karegar}
             alt="programmer cartoon"
-            width={120}
-            height={120}
-            className="object-contain drop-shadow-lg rounded-full animate-upDown sm:w-[150px] sm:h-[150px]"
+            width={150}
+            height={150}
+            className="object-contain drop-shadow-lg rounded-full animate-upDown
+          
+            sm:w-[150px] sm:h-[150px] 
+            md:w-[220px] md:h-[220px]
+            lg:w-[300px] lg:h-[300px] "
           />
         </div>
       </div>
 
       <h1
         style={{ fontFamily: "yekanbold" }}
-        className="text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4 tracking-wide drop-shadow-sm px-2"
+        className=" sm:text-2xl md:text-3xl mb-3 sm:mb-4 tracking-wide drop-shadow-sm px-2"
       >
         سایت در حال بروزرسانی است
       </h1>
 
       <p
         style={{ fontFamily: "yekanmedium" }}
-        className="text-base sm:text-lg leading-7 sm:leading-8 text-sky-800 max-w-lg px-4"
+        className=" sm:text-xl sm:leading-8 text-sky-800  px-4"
       >
-        ما در حال بروزرسانی رابط و تجربه کاربری سایت آکادمی مکین هستیم
-        <br />
+       ما در حال بروزرسانی رابط و تجربه کاربری سایت آکادمی مکین هستیم
+        <br /> 
         😉 خیلی زود برمیگردیم
       </p>
 

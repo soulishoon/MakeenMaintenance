@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'yekanbold';
-  src: url('/fonts/iranyekanwebbold.woff') format('woff');
+  src: url('/fonts/iranyekanwebextrabold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -10,8 +10,8 @@
 
 @font-face {
   font-family: 'yekanmedium';
-  src: url('/fonts/iranyekanwebmedium.woff') format('woff');
-  font-weight: 500;
+  src: url('/fonts/iranyekanwebbold.woff') format('woff');
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
