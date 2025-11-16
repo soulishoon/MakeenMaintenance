@@ -1,65 +1,66 @@
 import Image from "next/image";
+import karegar from "../public/images/karegar.png";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-linear-to-tl from-sky-100 to-sky-200  text-sky-700 p-6 text-center">
+      <div className="mb-8 flex flex-col items-center relative">
+        <div className="p-2  rounded-full shadow-xl border border-sky-300 animate-glowOutline">
+          <Image
+            src={karegar}
+            alt="programmer cartoon"
+            width={150}
+            height={150}
+            className="object-contain drop-shadow-lg rounded-full animate-upDown"
+          />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </div>
+
+     <h1 style={{ fontFamily: 'yekanbold' }} className="text-3xl mb-4 tracking-wide drop-shadow-sm">
+  سایت در حال بروزرسانی است
+</h1>
+      <p style={{fontFamily: "yekanmedium"}} className="text-lg  leading-8 text-sky-800">
+. ما در حال بروزرسانی رابط و تجربه کاربری سایت آکادمی مکین هستیم <br />
+   😉 خیلی زود برمیگردیم
+      </p>
+
+      <div className="mt-12">
+        <div className="w-40 h-2 bg-sky-200 rounded-full overflow-hidden shadow-inner">
+          <div className="h-full w-full bg-sky-500 animate-[progress_2s_ease-in-out_infinite] rounded-full"></div>
         </div>
-      </main>
+      </div>
+
+      <style>{`
+        @keyframes progress {
+          0% { transform: translateX(-100%); }
+          50% { transform: translateX(0%); }
+          100% { transform: translateX(100%); }
+        }
+
+        @keyframes upDown {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-6%); }
+        }
+
+        @keyframes glowOutline {
+          0%, 100% {
+            box-shadow: 0 0 12px 4px rgba(56, 189, 248, 0.5);
+          }
+          50% {
+            box-shadow: 0 0 20px 8px rgba(14, 165, 233, 0.8);
+          }
+        }
+
+        .animate-upDown {
+          animation: upDown 3s ease-in-out infinite;
+        }
+
+        .animate-glowOutline {
+          animation: glowOutline 3s ease-in-out infinite;
+        }
+
+
+      `}</style>
     </div>
   );
 }
