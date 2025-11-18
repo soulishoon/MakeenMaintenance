@@ -22,14 +22,14 @@ export default function Home() {
 
       <h1
         style={{ fontFamily: "yekanbold" }}
-        className=" sm:text-2xl md:text-3xl mb-3 sm:mb-4 tracking-wide drop-shadow-sm px-2"
+        className=" sm:text-xl md:text-2xl mb-3 sm:mb-4 tracking-wide drop-shadow-sm px-2"
       >
         سایت در حال بروزرسانی است
       </h1>
 
       <p
         style={{ fontFamily: "yekanmedium" }}
-        className=" sm:text-xl sm:leading-8 text-sky-800  px-4"
+        className=" sm:text-[18px] sm:leading-8 text-sky-800  px-4"
       >
        ما در حال بروزرسانی رابط و تجربه کاربری سایت آکادمی مکین هستیم
         <br /> 
