@@ -95,7 +95,7 @@ export default function Home() {
       <div className="mt-10 text-sky-800 text-sm sm:text-base">
         <p style={{ fontFamily: "yekanmedium" }}>
           تماس با ما    :
-          <span className="font-bold ml-2">  77188185  </span>
+          <span className="font-bold ml-2"> ۷۷۱۸۸۱۸۵ </span>
         </p>
       </div>
 
